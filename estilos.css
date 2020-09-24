@@ -1,0 +1,233 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100%;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    margin-bottom: 5px;
+    
+}
+.navbar_container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 0;
+    
+}
+li{
+    list-style: none;
+}
+.navbar_container a{
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar_container a:active, .navbar_container a:hover{
+    background-color: #D53A3D;
+    transition: all 0.7s;
+}
+#quienes_somos{
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    margin-top: 40px;
+}
+#quienes_somos img{
+    width: 30%;
+    transform: translate(450px);
+    animation-name: presentacion;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    box-shadow: 0px 0px 30px #fcfcfc;
+}
+@keyframes presentacion{
+    0%{
+        transform: none;
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: none;
+    }
+    100%{
+        transform: translate(450px);
+        box-shadow: 0px 0px 30px #fcfcfc;
+    }
+}
+#quienes_somos p{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+#que_hacemos{
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    display: grid;
+    grid-template-columns:  repeat(3, 400px);
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    background-color: black;
+    border: gray solid;
+    height: 520px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.cards p{
+    font-size: 18px;
+}
+#que_hacemos img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+::placeholder{
+    font-style: italic;
+}
+textarea{
+    overflow: scroll;
+}
+footer{
+    width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pie1{
+    width: 500px;
+    height: 100px;
+    background-color:black;
+    float: left;
+}
+#pie1 a{
+    text-decoration: none;
+}
+#pie1 p, #pie2 p, #pie3 p{
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+#pie2, #pie3{
+    width: 250px;
+    height: 100px;
+    background-color:black;
+    float: left;
+}
+#contacto{
+    height: 500px;
+    width: 1000px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#enviar{
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+#enviar:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+#contacto a{
+    color: white;
+    font-size: x-large;
+}
+#contacto a:hover{
+    text-decoration: none;
+}
+#contacto h2{
+    font-size: 32px;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .navbar_container{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    li{
+        background-color: black;
+    }
+    #que_hacemos{
+        display: block;
+        height: auto;
+        width: 100%;
+        grid-column-gap: none;
+    }
+    #quienes_somos{
+        height: auto;
+        
+        margin-top: 50px;
+    }
+    #quienes_somos img{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        transform: translate(50%);
+    }
+    #quienes_somos p{
+        font-size: 22px;
+    }
+    @keyframes presentacion{
+        0%{
+            transform: translate(50%);
+        }
+        100%{
+            transform: translate(50%)
+        }
+    }
+    #contacto{
+        width: 100%;
+        height: auto;
+        margin-top: none;
+        margin-bottom: none;
+        margin-right: none;
+        margin-left: none;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+    }
+}

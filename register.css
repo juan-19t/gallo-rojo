@@ -1,0 +1,83 @@
+body{
+    background: radial-gradient(gray, black);
+    padding: 0;
+    margin: 0;
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: -1px 5px 12px 12px rgba(241,237,245,1);
+    
+}
+.content p, .content a{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    color: white;
+}
+input{
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.content p button{
+    width: 100%;
+    height: 30px;
+    background-color:  #D53A3D;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border: white solid 1px;
+    letter-spacing: 2px;
+}
+.content button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+::placeholder{
+    font-style: italic;
+}
+@media screen and (max-width: 1000px){
+    .container{
+        width: 100%;
+        height: 100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        box-shadow:none;
+        
+    }
+}
