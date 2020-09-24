@@ -178,6 +178,9 @@ footer{
 
 
 @media screen and (max-width: 1000px){
+    body, html{
+        scroll-behavior: smooth;
+    }
     .navbar_container{
         display: block;
         width: 100%;
