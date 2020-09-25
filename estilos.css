@@ -46,9 +46,10 @@ li{
 }
 #quienes_somos{
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-color: black;
     margin-top: 40px;
+    line-height: 55px;
 }
 #quienes_somos img{
     width: 30%;
@@ -80,9 +81,26 @@ li{
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
 }
+#que_hacemos1{
+    width: 90%;
+    height: auto;
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+    text-align: justify;
+}
+#que_hacemos1 h4{
+    text-decoration: underline;
+}
+#que_hacemos1 h3{
+    text-align: center;
+}
 #que_hacemos{
     width: 100%;
-    height: 550px;
+    height: auto;
     background-color: black;
     display: grid;
     grid-template-columns:  repeat(3, 400px);
@@ -90,6 +108,7 @@ li{
     justify-content: center;
     align-items: center;
 }
+
 .cards{
     background-color: black;
     border: gray solid;
