@@ -20,13 +20,14 @@ html{
 }
 .content{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: black;
     display: block;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
     box-shadow: -1px 5px 12px 12px rgba(241,237,245,1);
+    padding: 20px;
     
 }
 .content p, .content a{
@@ -64,15 +65,15 @@ input{
 @media screen and (max-width: 1000px){
     .container{
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: block;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
     .content{
-        width: 100%;
-        height: 100%;
+        width: 88%;
+        height: 100vh;
         background-color: transparent;
         display: block;
         align-items: center;

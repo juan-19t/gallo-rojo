@@ -133,6 +133,7 @@ li{
 }
 textarea{
     overflow: scroll;
+    resize: none;
 }
 footer{
     width: 1000px;
@@ -251,5 +252,16 @@ footer{
     footer{
         width: 100%;
         height: auto;
+    }
+    #pie2, #pie3{
+        width: 100%;
+        height: auto;
+        float: auto;
+        margin-top: 20px;
+    }
+    #pie1{
+        width: 100%;
+        height: auto;
+        float: auto;
     }
 }
