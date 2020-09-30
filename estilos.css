@@ -225,77 +225,133 @@ footer{
 #contacto h2{
     font-size: 32px;
 }
-hr{
-    width: 80%;
-}
+
 
 
 @media screen and (max-width: 1000px){
-    body, html{
-        scroll-behavior: smooth;
-    }
-    .navbar_container{
-        display: block;
+    
+    .navbar{
         width: 100%;
+        margin: 0;
         height: auto;
     }
     .container{
         width: 100%;
         height: auto;
-    }
-    li{
         background-color: black;
+        margin-bottom: 5px; 
     }
-    #que_hacemos{
-        display: block;
-        height: auto;
+    .navbar_container{
         width: 100%;
-        grid-column-gap: none;
-    }
-    #quienes_somos{
         height: auto;
-        line-height: 30px;
-        margin-top: 50px;
+        display: block;
+        padding: 0; 
+    }
+    .navbar_container a{
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        display: block;
+       padding-bottom: 10px;
+    }
+    
+    #quienes_somos{
+        width: 100%;
+        height: auto;
+        line-height: 40px;
     }
     #quienes_somos img{
         width: 50%;
-        justify-content: center;
-        align-items: center;
         transform: translate(50%);
-    }
-    #quienes_somos p{
-        font-size: 22px;
+        animation-name: presentacion;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        box-shadow: 0px 0px 30px #fcfcfc;
     }
     @keyframes presentacion{
         0%{
-            transform: translate(50%);
+            transform: none;
+            box-shadow: none;
+        }
+        50%{
+            box-shadow: none;
         }
         100%{
-            transform: translate(50%)
+            transform: translate(50%);
+            box-shadow: 0px 0px 30px #fcfcfc;
         }
     }
-    #contacto{
-        width: 100%;
+    
+    #quienes_somos p{
+        padding: 10px;
+    }
+    #que_hacemos1{
+        width: 90%;
         height: auto;
-        margin-top: none;
-        margin-bottom: none;
-        margin-right: none;
-        margin-left: none;
+        margin-bottom: 80px;
+        padding: 10px;
+    }
+    #que_hacemos{
+        width: 90%;
+        height: auto;
+        background-color: black;
+        display: block;
+        grid-template-columns:  none;
+        grid-column-gap: none;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+    
+    .cards{
+        background-color: black;
+        border: gray solid;
+        height: 530px;
+        width: 100%;
+    }
+    .cards p{
+        font-size: 18px;
+        padding: 10px;
+    }
+   
+    textarea{
+        overflow: scroll;
+        resize: none;
     }
     footer{
         width: 100%;
         height: auto;
-        display: block;
-    }
-    #pie2, #pie3{
-        width: 100%;
-        height: auto;
-        float: auto;
-        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
     }
     #pie1{
         width: 100%;
         height: auto;
-        float: auto;
+        float: none;
     }
+    
+    #pie2, #pie3{
+        width: 100%;
+        height: auto;
+        background-color:black;
+        float: none;
+    }
+    #contacto{
+        height: auto;
+        width: 100%;
+        background-color: black;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    textarea{
+        width: 90%;
+    }
+    
 }
