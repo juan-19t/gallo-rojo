@@ -4,6 +4,24 @@ html, body{
     background-color: black;
     scroll-behavior: smooth;
 }
+#icon{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    opacity: .5;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+#icon a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    margin-left: 9px;
+    font-size: 32px;
+}
 .navbar{
     width: 100%;
     margin: 0;
@@ -52,7 +70,7 @@ li{
 }
 #quienes_somos img{
     width: 30%;
-    transform: translate(450px);
+    transform: translate(110%);
     animation-name: presentacion;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
@@ -68,7 +86,7 @@ li{
         box-shadow: none;
     }
     100%{
-        transform: translate(450px);
+        transform: translate(110%);
         box-shadow: 0px 0px 30px #fcfcfc;
     }
 }
@@ -78,32 +96,43 @@ li{
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 28px;
+    font-style: italic;
+    padding: 20px;
 }
 #que_hacemos1{
     width: 90%;
     height: auto;
     font-size: 18px;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 80px;
     text-align: justify;
+    margin-top: 50px;
+    border:  solid 2px white;
+    border-radius: 20px;
+    padding: 20px;
 }
 #que_hacemos1 h4{
     text-decoration: underline;
+    letter-spacing: 1px;
 }
 #que_hacemos1 h3{
     text-align: center;
+    letter-spacing: 2px;
+    line-height: 30px;
+    /* font-style: italic; */
+    font-family: 'Raleway', sans-serif;
 }
 #que_hacemos{
     width: 100%;
     height: auto;
     background-color: black;
     display: grid;
-    grid-template-columns:  repeat(3, 400px);
+    grid-template-columns:  repeat(3, 30%);
     grid-column-gap: 20px;
     justify-content: center;
     align-items: center;
@@ -112,15 +141,17 @@ li{
 .cards{
     background-color: black;
     border: gray solid;
-    height: 520px;
+    height: 565px;
     text-align: center;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     border-radius: 10px;
     margin-top: 10px;
+    
 }
 .cards p{
     font-size: 18px;
+    padding: 10px;
 }
 #que_hacemos img{
     width: 100%;
@@ -152,7 +183,7 @@ footer{
 }
 #pie1 p, #pie2 p, #pie3 p{
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
 #pie2, #pie3{
@@ -195,36 +226,7 @@ footer{
     font-size: 32px;
 }
 hr{
-    background-color: #D53A3D;
-    width: 50%;
-    animation-name: linea;
-    animation-duration: 7s;
-    animation-timing-function: ease;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-}
-@keyframes linea{
-    0%{
-        /* transform: translate(100%); */
-        width: 0%;
-    }
-    25%{
-        transform: translate(100%);
-        width: 100%;
-    }
-    50%{
-        /* transform: translate(-25%); */
-        width: 0%;
-    }
-    
-    75%{
-        transform: translate(-100%);
-        width: 100%;
-    }
-    100%{
-        /* transform: translate(-100%); */
-        width: 0%;
-    }
+    width: 80%;
 }
 
 
@@ -252,7 +254,7 @@ hr{
     }
     #quienes_somos{
         height: auto;
-        
+        line-height: 30px;
         margin-top: 50px;
     }
     #quienes_somos img{
@@ -283,6 +285,7 @@ hr{
     footer{
         width: 100%;
         height: auto;
+        display: block;
     }
     #pie2, #pie3{
         width: 100%;
